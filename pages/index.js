@@ -1,8 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Featured from '../components/Featured'
-import Footer from '../components/Footer'
-import Navbar from '../components/NavBar'
 import ProductList from '../components/ProductList'
 import styles from '../styles/Home.module.css'
 
@@ -17,5 +14,5 @@ export default function Home() {
       <Featured/>
       <ProductList/>
     </div>
-  )
+  );
 }
