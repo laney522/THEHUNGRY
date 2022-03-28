@@ -30,13 +30,13 @@ const Navbar = () => {
         </ul>
       </div>
       <div className={styles.item}>
-        <div>
-        <Image 
-            src="/img/cart.png" 
-            width="30px" 
-            height="30px"  
-            alt=""
-          />
+        <div className={styles.cart}>
+          <Image 
+              src="/img/cart.png" 
+              width="30px" 
+              height="30px"  
+              alt=""
+            />
           <div className={styles.counter}>2</div>
         </div>
       </div>
