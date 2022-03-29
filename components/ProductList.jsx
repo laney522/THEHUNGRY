@@ -2,7 +2,7 @@ import styles from "../styles/ProductList.module.css";
 import ProductCard from './ProductCard';
 
 
-const ProductList = () => {
+const ProductList = ({ productList }) => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>THE BEST FOOD IN TOWN</h1>
@@ -12,14 +12,9 @@ const ProductList = () => {
         laboris nisi ut aliquip ex ea commodo consequat.
       </p>
       <div className={styles.wrapper}>
-        <ProductCard/>
-        <ProductCard/>
-        <ProductCard/>
-        <ProductCard/>
-        <ProductCard/>
-        <ProductCard/>
-        <ProductCard/>
-        <ProductCard/>
+      {productList.map((product)=>(
+          <ProductCard key={product._id} product={product}/>                
+        ))}
       </div>
     </div>
   )
