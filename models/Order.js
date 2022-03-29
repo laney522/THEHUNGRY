@@ -23,7 +23,7 @@ const OrderSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-},{ timestamps: ture });
+},{ timestamps: true });
 
 export default mongoose.models.Order || 
   mongoose.model("Order", OrderSchema);
